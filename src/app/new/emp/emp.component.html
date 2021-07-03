@@ -1,0 +1,14 @@
+<div class="container">
+    <form (ngSubmit)="onsubmit()">
+       <label for="First Name">First Name</label>
+        <input type="text" name="first_name" class="form-control"[(ngModel)]="data.first_name">
+        <label for="Last Name">Last Name</label>
+        <input type="text" name="last_name" class="form-control"[(ngModel)]="data.last_name">
+        <label for="mobile">mobile</label>
+        <input type="mobile" name="mobile" class="form-control" [(ngModel)]="data.mobile">
+        <label for="Email">Email</label>
+        <input type="email" name="email" class="form-control"[(ngModel)]="data.email"><br>
+        <button name="submit" class="btn btn-success">Submit</button>&nbsp;
+        <button name="submit" class="btn btn-info " routerLink="/employee">View</button>
+    </form>
+</div>

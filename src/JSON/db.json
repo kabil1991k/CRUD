@@ -1,0 +1,37 @@
+[
+    {
+"id":1,
+"first_name":"Kabil",
+"last_name":"k",
+"mobile":9775586586,
+"email":"k.kabil17@gmail.com"
+},
+{
+    "id":2,
+    "first_name":"Visnu",
+    "last_name":"k",
+    "mobile":9775586596,
+    "email":"k.vishnu@gmail.com"
+    },
+    {
+        "id":3,
+        "first_name":"Arun",
+        "last_name":"k",
+        "mobile":9775586486,
+        "email":"k.arun@gmail.com"
+        },
+        {
+            "id":4,
+            "first_name":"Livin",
+            "last_name":"k",
+            "mobile":9775584686,
+            "email":"k.livin@gmail.com"
+            },
+            {
+                "id":5,
+                "first_name":"Kiran",
+                "last_name":"k",
+                "mobile":9775346586,
+                "email":"k.kiran@gmail.com"
+                }
+]
