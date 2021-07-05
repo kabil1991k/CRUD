@@ -1,7 +1,9 @@
 export class Employee{
     public id:number;
-    public name:string;
+    public first_name:string;
+    public last_name:string;
+    public mobile:number;
     public email:string;
-    public phone:number;
+    
 
 }

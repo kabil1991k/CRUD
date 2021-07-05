@@ -9,16 +9,16 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EmployeeService {
-private _url :string = "./src/JSON/db.json";
+
   constructor(private http : HttpClient) { }
- getEmployees(data :any)
+ getEmployees(data :any) : Observable<Employee[]>
  {
-   return this.http.post<any>('http://localhost/API/api.php',data)
+   return this.http.post<Employee[]>('http://localhost/API/api.php',data)
   
  }
  getData(): Observable<Employee[]>
  {
-return this.http.get<Employee[]>(this._url)
+return this.http.get<Employee[]>('http://localhost/API/api.php')
  }
   
 }

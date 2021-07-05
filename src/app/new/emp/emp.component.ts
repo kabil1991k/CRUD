@@ -39,18 +39,21 @@ export class EmpComponent implements OnInit {
     }
   ];*/
   data={
-
+     
     first_name:"",
     last_name:"",
     mobile:null,
     email:null,
   }
+  
   constructor(private employe:EmployeeService) { }
   onsubmit()
   {
-  
+  console.log(this.data);
    this.employe.getEmployees(this.data).subscribe((Response)=>{
      console.log(Response);
+     
+     
    })
   }
   ngOnInit(): void {

@@ -1,5 +1,24 @@
-<ul *ngFor = "let emp of employe">
-    <li>
-      {{emp.first_name}}  
-    </li>
-</ul>
+<div class="container">
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let emp of employe">
+      <td><span>{{emp.id}}</span></td>
+      <td><span>{{emp.first_name}}</span></td>
+      <td><span>{{emp.last_name}}</span></td>
+      <td><span>{{emp.mobile}}</span></td>
+      <td><span>{{emp.email}}</span></td>
+      <td><span><button type="submit" class="btn btn-info">Edit</button>&nbsp;<button type="submit" class="btn btn-danger">Delete</button></span></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

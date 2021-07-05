@@ -15,7 +15,10 @@ public employe=[];
   constructor(private em:EmployeeService) { }
 
   ngOnInit(){
-    this.em.getData().subscribe(data=>this.employe=data)
+    this.em.getData().subscribe((Response)=>{
+      console.log(Response);
+      this.employe=Response;
+    })
   }
 
 }
